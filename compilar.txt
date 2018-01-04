@@ -1,0 +1,1 @@
+ff.exe -o ejemploclase.pddl -f ejemploclas-problema.pddl
