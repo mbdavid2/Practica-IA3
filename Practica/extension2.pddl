@@ -19,7 +19,7 @@
     
     (:action asignar_habitacion
         :parameters (?res - reserva ?hab - habitacion)
-        :precondition (and (not (atendida ?res)) (<= (pers_res ?res) (pers_hab ?hab)) (!= (orientacio ?res) (orientacio ?hab))
+        :precondition (and (not (atendida ?res)) (<= (pers_res ?res) (pers_hab ?hab)) (not (= (orientacio ?res) (orientacio ?hab)))
                         (forall (?auxres - reserva)
                             (or (not (asignada ?auxres ?hab))
                                 (or
