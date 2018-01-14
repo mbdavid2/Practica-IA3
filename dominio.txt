@@ -1,0 +1,17 @@
+Explicación de los predicados que vamos a hacer, funciones, etc
+
+asignarhabitacion
+
+    Opcion A: basico, si esta libre y hay espacio -> asignar, esto ya funciona
+    Opcion B: si esta ocupada pero libre despues...
+            
+            
+            
+Extension 1: Se optimiza el número de reservas asignadas, pueden quedar reservas sin asignar.
+
+    quiere maximizar o minimizar¿?¿?
+    
+    Hacer puntuacion, cada reserva suma a la puntuacion, al final (:metric maximize (puntuacion))
+    
+Extension 2: con la puntuacion tambien, cada habitacion que coincide con la orientacion suma
+

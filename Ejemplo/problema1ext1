@@ -1,0 +1,26 @@
+(define (problem problema1ext1)
+	
+	(:domain hotelext1)
+	(:objects h1 - habitacion
+		  r1 r2 r3 - reserva
+	)
+	(:init
+		(= (numpersona h1) 4)
+		(= (numpersona r1) 2)
+		(= (numpersona r2) 3)
+		(= (numpersona r3) 4)
+		(= (inicio r1) 1)
+		(= (final r1) 8)
+		(= (inicio r2) 7)
+		(= (final r2) 10)
+		(= (inicio r3) 20)
+		(= (final r3) 29)
+		(= (costeignorar) 0)
+	)
+
+	(:goal
+		(forall (?m - reserva) (atendida ?m)
+		)
+	)
+	(:metric minimize (costeignorar))
+)

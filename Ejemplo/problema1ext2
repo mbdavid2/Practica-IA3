@@ -1,0 +1,35 @@
+(define (problem problema1ext2)
+	
+	(:domain hotelext2)
+	(:objects h1 h2 h3 - habitacion
+		  r1 r2 r3 - reserva
+		  N S E O - orientacion
+	)
+	(:init
+		(= (numpersona h1) 4)
+		(= (numpersona h2) 4)
+		(= (numpersona h3) 4)
+		(= (numpersona r1) 2)
+		(= (numpersona r2) 3)
+		(= (numpersona r3) 4)
+		(= (inicio r1) 1)
+		(= (final r1) 7)
+		(= (inicio r2) 7)
+		(= (final r2) 10)
+		(= (inicio r3) 1)
+		(= (final r3) 29)
+		(orientada h1 O)
+		(orientada h2 E)
+		(orientada r1 O)
+		(orientada r2 E)
+		(orientada r3 E)
+		(= (costeignorar) 0)
+		(= (costeorientacion) 0)
+	)
+
+	(:goal
+		(forall (?m - reserva) (atendida ?m)
+		)
+	)
+	(:metric minimize (+ (* 10 (costeignorar)) (costeorientacion) ))
+)
