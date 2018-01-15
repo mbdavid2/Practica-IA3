@@ -1,0 +1,5 @@
+./ff -o nivelbasico.pddl -f problemabasico.pddl
+./ff -o extension1.pddl -f problemaextension1.pddl  
+./ff -o extension2.pddl -f problemaextension2.pddl  
+./ff -O -o extension3.pddl -f problemaextension3.pddl 
+./ff -O -o extension4.pddl -f problemaextension4.pddl

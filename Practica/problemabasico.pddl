@@ -24,8 +24,8 @@
 		(= (dia_ini res3) 8)
 		(= (dia_fin res3) 10)
 		(= (pers_res res4) 3)
-		(= (dia_ini res4) 2)
-		(= (dia_fin res4) 3)
+		(= (dia_ini res4) 12)
+		(= (dia_fin res4) 17)
 	)
 
 	(:goal
